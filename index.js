@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4000;
 app.get("/recipes", function (request, response) {
   response.setHeader(
     "Access-Control-Allow-Origin",
-    "http://meal-pal.herokuapp.com/"
+    "http://meal-pal.herokuapp.com"
   );
 
   const queryUrl = buildUrl("https://api.edamam.com", {
