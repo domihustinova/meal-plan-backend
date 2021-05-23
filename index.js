@@ -10,10 +10,7 @@ const APP_KEY = process.env.EDAMAM_APP_KEY;
 const PORT = process.env.PORT || 4000;
 
 app.get("/recipes", function (request, response) {
-  response.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://meal-pal.herokuapp.com"
-  );
+  response.setHeader("Access-Control-Allow-Origin", "*");
 
   const queryUrl = buildUrl("https://api.edamam.com", {
     path: "search",
