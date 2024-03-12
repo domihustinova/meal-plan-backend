@@ -1,6 +1,7 @@
 import express from "express";
 import fetch from "node-fetch";
 import buildUrl from "build-url";
+import "dotenv/config";
 
 const app = express();
 
